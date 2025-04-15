@@ -195,6 +195,7 @@
       ],
       "track_widths": [
         0.0,
+        0.4,
         0.5,
         1.0,
         1.5,
@@ -233,7 +234,11 @@
         },
         {
           "diameter": 0.5,
-          "drill": 0.0
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         },
         {
           "diameter": 1.0,
@@ -495,7 +500,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -515,7 +520,6 @@
         "bus_width": 12,
         "clearance": 1.25,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 1,
         "microvia_diameter": 0.3,
@@ -756,7 +760,19 @@
     ],
     [
       "8d443f08-44e3-4cb8-98b2-f920fc9e6b8c",
-      "MAX31865 RTD Sensor"
+      "MAX31865 RTD Sensor1"
+    ],
+    [
+      "fab02d98-7a25-457b-aaf2-ee11c9a5ed50",
+      "MAX31865 RTD Sensor3"
+    ],
+    [
+      "c1e0fb7d-e3e2-40a1-99cb-0ef960c71346",
+      "MAX31865 RTD Sensor2"
+    ],
+    [
+      "91f3c1da-7e16-4cfd-984a-eae65aa817f4",
+      "MAX31865 RTD Sensor4"
     ]
   ],
   "text_variables": {}
