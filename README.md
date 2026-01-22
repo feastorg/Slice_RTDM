@@ -1,6 +1,6 @@
-# Slice Template
+# Slice RTDM
 
-Template for creating BREAD slices.
+Slice for RTD (resistive temperature device) measurement using the MAX31865 chip.
 
 ## Introduction
 

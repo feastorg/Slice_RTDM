@@ -1245,6 +1245,118 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "FB1 (optional): Populate only if VDD is noisy \nor shared with high-speed digital loads.\nOtherwise replace with 0 ohm or short."
+		(exclude_from_sim no)
+		(at 156.972 53.594 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "459650dc-2b51-44f4-803c-d98af405a9df")
 	)
 	(text "4 wire: \n	- config: JUMP1 OPEN, JUMP2 CLOSED, JUMP3 OPEN, JUMP4 OPEN\n	- changes from prod: none (default)\n3 wire: \n	- config: JUMP1 CLOSED, JUMP2 OPEN, JUMP3 OPEN, JUMP4 OPEN\n	- changes from prod: solder short JUMP1 closed and cut JUMP2\n2 wire: \n	- config: JUMP1 OPEN, JUMP2 CLOSED, JUMP3 CLOSED, JUMP4 CLOSED\n	- changes from prod: solder short JUMP3 & JUMP4 closed\n"
 		(exclude_from_sim no)
@@ -1337,6 +1449,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f6265ca-e2f4-493d-b7c3-5823a293f4bb")
+	)
+	(junction
+		(at 144.78 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9c1ba5c-f5a3-4acb-8bca-049159d1b265")
 	)
 	(junction
 		(at 187.96 95.25)
@@ -2310,6 +2428,85 @@
 				)
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/fab02d98-7a25-457b-aaf2-ee11c9a5ed50"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 144.78 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3990ac99-321e-4ec4-b4db-aa5d378ba109")
+		(property "Reference" "#FLG04"
+			(at 146.685 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 148.59 60.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 144.78 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36832b2a-18ec-4ef4-8f42-7da2bdd38b21")
+		)
+		(instances
+			(project ""
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/8d443f08-44e3-4cb8-98b2-f920fc9e6b8c"
+					(reference "#FLG04")
+					(unit 1)
+				)
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/91f3c1da-7e16-4cfd-984a-eae65aa817f4"
+					(reference "#FLG07")
+					(unit 1)
+				)
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/c1e0fb7d-e3e2-40a1-99cb-0ef960c71346"
+					(reference "#FLG06")
+					(unit 1)
+				)
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/fab02d98-7a25-457b-aaf2-ee11c9a5ed50"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)

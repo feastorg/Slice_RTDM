@@ -8,4 +8,3 @@
   - https://www.digikey.ca/en/products/detail/texas-instruments/TXB0108PWR/1305699
 
 ## References
-
