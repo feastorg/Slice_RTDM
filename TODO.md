@@ -2,4 +2,5 @@
 
 ## KiBot CI/Docs Pipeline
 
-- Awaiting first CI run
+- Pipeline green: DRC pass, ERC pass, Fab pass, deploy pass
+- No board-level issues detected
